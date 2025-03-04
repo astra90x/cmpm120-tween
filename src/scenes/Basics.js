@@ -26,7 +26,7 @@ class Basics extends Phaser.Scene {
         this.instructionText = this.add.bitmapText(centerX, centerY, 'gem_font', '', 24).setOrigin(0.5)
 
         // add tween
-        let basicTween = this.tweens.add({
+        let _basicTween = this.tweens.add({
             targets: tomato,
             alpha: { from: 0, to: 1 },
             scale: { from: 0.1, to: 18 },
@@ -47,7 +47,7 @@ class Basics extends Phaser.Scene {
             },
             onComplete: () => {
                 this.instructionText.text = 'Tomato tween complete!'
-            }
+            },
         })
 
         // create pear tween chain
@@ -80,7 +80,7 @@ class Basics extends Phaser.Scene {
 
     update() {
         // scene switching / restart
-        if(Phaser.Input.Keyboard.JustDown(this.reload)) {
+        if (Phaser.Input.Keyboard.JustDown(this.reload)) {
             this.scene.restart()
         }
     }

@@ -1,6 +1,6 @@
 // Code Practice: Tiny Tween Chain
-// Name:
-// Date:
+// Name: Astra Tsai
+// Date: 3/3/2025
 
 // CODE ARMOR
 'use strict'
@@ -12,7 +12,7 @@ let config = {
     pixelArt: true,
     width: 800,
     height: 600,
-    scene: [ Basics ]
+    scene: [Basics],
 }
 
 const game = new Phaser.Game(config)
